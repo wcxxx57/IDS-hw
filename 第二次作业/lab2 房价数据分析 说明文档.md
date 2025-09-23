@@ -54,7 +54,7 @@ df[num_cols] = imputer.fit_transform(df[num_cols])
 
 - 箱线图展示各特征的分布及异常值：
 
-  ![](picture\yi_xiang.png)
+  ![](picture/yi_xiang.png)
 
 - 利用散点图揭示面积与价格的关系及联合异常，可以看出，如下图所示，右下角有两个数据点**地上居住面积很大，价格却很低**，我猜测可能是：
 
@@ -62,11 +62,11 @@ df[num_cols] = imputer.fit_transform(df[num_cols])
   - 特殊交易（如家庭内部转让、法院拍卖）
   - 房屋存在严重结构性问题（未在 `Functional` 中体现）
   
-  ![散点图示例](picture\yi_san.png)
+  ![散点图示例](picture/yi_san.png)
   
   **IQR异常值统计结果示例**
   
-  ![](picture\yi_shu.png)
+  ![](picture/yi_shu.png)
 
 ### 3. 特征相关性分析
 
@@ -83,7 +83,7 @@ df[num_cols] = imputer.fit_transform(df[num_cols])
 
 - 通过**热力图（Heatmap）可视化**相关性矩阵，快速定位与房价高度相关的特征。热力图如下所示：
 
-  ![热力图](picture\hot.png)
+  ![热力图](picture/hot.png)
 
 - 通过热力图，我们可以大致看出，`SalePrice`（房价）和`OverallQual`（整体质量）相关性较大，由于价格决定品质；`GarageYrBlt`（车库建造时间）和`YearBuilt`（房屋建造时间）相关性较大，由于车库和房屋一般是差不多一起建造的；`TotRmsAbvGrd`（地面以上总房间数）和`GrLivArea`（房屋面积）相关性较大，由于房屋面积越大，一般房间数也会更多等信息，大多也都符合我们现有常识。
 
