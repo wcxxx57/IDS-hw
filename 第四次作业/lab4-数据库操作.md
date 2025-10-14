@@ -8,7 +8,7 @@
 
 连接到本地数据库后，首先**新建了一个名为`idshw_esi`的schema**，并且在`Mysql Workbench`中将不同学科的csv格式的数据**手动通过`Table Data Import Wizar`导入为该schema中的table**，导入后的数据库形式如下图所示：
 
-![image-20251013234054436](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20251013234054436.png)
+![导入到数据库系统](pictures/schema.png)
 
 ## 2.优化关系型数据，并整理一个合理的schema
 
@@ -66,7 +66,7 @@
 
 最终得到如下所示，共包含34121条数据的**统一数据表**：
 
-![image-20251014094125835](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20251014094125835.png)
+![统一数据表](pictures/unified_data.png)
 
 ## 3.获取华东师范大学在各个学科中的排名
 
@@ -81,7 +81,7 @@ WHERE institution_name = 'EAST CHINA NORMAL UNIVERSITY'
 ORDER BY world_rank ASC;
 ```
 
-查询结果显示华东师范大学共有17个学科上榜，结果如下：![image-20251014190719510](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20251014190719510.png)
+查询结果显示华东师范大学共有17个学科上榜，结果如下：![ecnu排名](pictures/ecnu_rank.png)
 
 可见华东师范大学在**化学、数学、环境**等学科的全球学术排名较为靠前。
 
@@ -107,7 +107,7 @@ ORDER BY subject_name, world_rank ASC;
 
 查询结果共**4061条**中国（大陆地区）大学的数据，部分数据如下图所示：
 
-![image-20251014134212488](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20251014134212488.png)
+![大陆地区](pictures/mainland.png)
 
 ### 4.2 将各个学科中的中国大学表现简要分析并展示
 
@@ -138,7 +138,7 @@ ORDER BY 上榜大学数量 DESC;
 
 共22个学科的查询结果如下图所示：
 
-![image-20251014135107366](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20251014135107366.png)
+![大陆地区2](pictures/mainland2.png)
 
 由查询到的结果可以大致看出，**CHINESE ACADEMY OF SCIENCE（中国科学院大学）**在工程、化学、材料科学等在内的很多学科上都是中国大陆大学中排名最高的，中国大陆大学的**计算机（平均排名378.1）、数学（平均排名190.5）等学科**在全球排名整体较高。
 
@@ -200,7 +200,7 @@ GROUP BY subject_name, 区域
 ORDER BY subject_name, 上榜机构数 DESC;
 ```
 
-查询结果的**部分数据**如下图所示：![image-20251014185509858](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20251014185509858.png)
+查询结果的**部分数据**如下图所示：![不同区域](pictures/regions.png)
 
 就如展示的农业科学和生化科学数据来讲，可以看出Europe（欧洲）大学实验室在这两个领域的贡献较大且水平较高，非洲、大洋洲和南美洲的机构水平较弱。其他20个学科的数据中也可以得出类似的结论。
 
