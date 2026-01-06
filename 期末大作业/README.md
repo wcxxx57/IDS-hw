@@ -96,7 +96,7 @@ print("\n所有库导入完毕，字体配置完成。")
 
 示例如下：
 
-![image-20260106225417496](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20260106225417496.png)
+![image-20260106225417496](pictures/daily_trend.png)
 
 **图表解读**： 折线图显示，每日的消息量呈现出显著的波动性，不存在平稳的沟通频率。图中存在多个明显的活跃高峰期，单日消息量可超过200条；同时也存在一些相对沉寂的低谷时期。这种波动可能与双方的现实生活事件（如假期、工作繁忙期、共同经历的事件等）密切相关。
 
@@ -106,7 +106,7 @@ print("\n所有库导入完毕，字体配置完成。")
 
 示例如下：
 
-![image-20260106225445233](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20260106225445233.png)
+![image-20260106225445233](pictures/active_hour.png)
 
 **图表解读**： 该柱状图揭示了清晰的日内沟通节律：
 
@@ -130,7 +130,7 @@ print("\n所有库导入完毕，字体配置完成。")
 
 示例如下：
 
-![image-20260106225310509](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20260106225310509.png)
+![image-20260106225310509](pictures/wordcloud.png)
 
 ## 5. 深度情绪分析
 
@@ -142,7 +142,7 @@ print("\n所有库导入完毕，字体配置完成。")
 
 **示例如下**：
 
-![image-20260106224706837](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20260106224706837.png)
+![image-20260106224706837](pictures/pie.png)
 
 **图表解读**： 根据分析结果，整体的情绪分布呈现出非常积极的态势：
 
@@ -158,7 +158,7 @@ print("\n所有库导入完毕，字体配置完成。")
 
 **示例如下**：
 
-![image-20260106224805134](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20260106224805134.png)
+![image-20260106224805134](pictures/emotion_dna.png)
 
 **图表解读**： 该图表以颜色编码每日的平均情绪：**绿色代表积极**，**红色代表消极**，颜色的深浅代表情绪的强度，而坐标轴则分别代表发送者和日期。
 
@@ -172,7 +172,7 @@ print("\n所有库导入完毕，字体配置完成。")
 
 示例如下：
 
-![image-20260106224905679](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20260106224905679.png)
+![image-20260106224905679](pictures/emotion_trend.png)
 
 **图表解读**： 此图清晰地展示了两位成员每日平均情绪分的波动轨迹。
 
